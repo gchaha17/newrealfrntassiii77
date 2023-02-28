@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/photo")
@@ -62,6 +63,11 @@ public class PhotoResource {
     {
 
         return prs.getPhotoByAlbumId(albumId);
+    }
+    @GetMapping("/get/photo/{photoId}")
+    public List<Photo> getPhotoById(@RequestParam(name="Id") String photoId, @RequestHeader(name="idToken")String idToken)
+    {
+        return  prs.getPhotoById(photoId);
     }
 
 }

@@ -1,6 +1,5 @@
 package com.example.assignnment4.service;
 
-import com.example.assignnment4.model.Comment;
 import com.example.assignnment4.model.Photo;
 import com.example.assignnment4.repoistery.PhotoRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +41,9 @@ public class PhotoService {
 
     public List<Photo> getPhotoByAlbumId(String albumId) {
         return u4.findByAlbumId(albumId);
+    }
+
+    public List<Photo> getPhotoById(String photoId) {
+        return u4.findAllById(photoId);
     }
 }

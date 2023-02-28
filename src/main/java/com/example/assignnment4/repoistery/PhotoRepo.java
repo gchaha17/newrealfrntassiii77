@@ -1,9 +1,6 @@
 package com.example.assignnment4.repoistery;
 
-import com.example.assignnment4.model.Album;
-import com.example.assignnment4.model.Comment;
 import com.example.assignnment4.model.Photo;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,6 +12,9 @@ public interface PhotoRepo extends MongoRepository<Photo,String> {
 
    // List<Photo> findAllByPhotoId(String photoId);
 
+
+
+     List<Photo> findAllById(String photoId);
 
      List<Photo> findByAlbumId(String albumId);
 
