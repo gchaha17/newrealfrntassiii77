@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/photo")
-@CrossOrigin(origins = {"http://assi4and5.s3-website-us-west-2.amazonaws.com","http://localhost:4200","http://assi667766.s3-website-us-west-2.amazonaws.com"})
+@CrossOrigin(origins = {"http://assi4and5.s3-website-us-west-2.amazonaws.com","http://localhost:4200","http://assi667766.s3-website-us-west-2.amazonaws.com","http://assi7.s3-website-us-west-2.amazonaws.com"})
 public class PhotoResource {
 
     @Autowired
